@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid19-war room</title>
+    <!-- for bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!-- for jquery -->
+  
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <ul>
+      <li>
+        <a class=" white" href="#">COVID19-War Room</a>
+      </li>
+        <li>
+          <a  href="Samplecollector.html" class="link  active">Samples</a>
+        </li>
+        <li>
+          <a  href="transport.html" class="link line">Transport</a>
+        </li>
+    
+ 
+      
+  </ul>
+</nav>
+  <div class="log">
+
+    <button class="logout">Logout</button>
+</div>
+  
+
+
+      
+   
+  </header>
+ <!-- CONTAINER STARTS -->
+  <div class="container">
+
+      <div class="row flex">
+        
+        <div class="col-sm-12 one">
+          <h3>Samples Collected</h3>
+          <!-- MODAL FOR FORM -->
+             <div class="modal-controller">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >Add new sample collected </button>
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New patient's Information</h5>
+                    </div>
+                    <!-- MODAL BODY -->
+
+                    <div class="modal-body">
+                     
+                        <form class="form">
+                          <label for="Name">Name:</label>
+                         <input type="text" placeholder="enter patient's name">
+                         <label for="date">Date</label>
+                         <input type="text" placeholder="enter todays date">
+                         <label for="Age">Age:</label>
+                         <input type="number" >
+                         <label for="Name">Sample ID:</label>
+                         <input type="text">
+                         <label for="Age">Gender:</label>
+                         <select  id="gender">
+                          <option value="male" selected>Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                         </select>
+                         
+                         <label for="state">State:</label>
+                         <select>
+                           <option value="uttarakhand" selected>Uttarakhand</option>
+                          </select>
+
+                          <label for="district">District:</label>
+                          <select>
+                            
+                            <option value="AL" selected>Almora</option>
+                            <option value="BA" >Bageshwar</option>
+                            <option value="CL">Chamoli</option>
+                            <option value="CP">Champawat</option>
+                            <option value="DD">Dehradun</option>
+                            <option value="HA">Haridwar</option>
+                            <option value="NA">Nainital</option>
+                            <option value="PG">Pauri Garhwal</option>
+                            <option value="PI">Pithoragarh</option>
+                            <option value="RP">Rudraprayag</option>
+                            <option value="TG">Tehri Garhwal</option>
+                            <option value="US">Udham Singh Nagar</option>
+                            <option value="UT"> Uttarkashi</option>
+                          </select>
+               
+                        </form> 
+                      
+                    </div>   
+
+                    <!-- MODAL BODY ENDS -->
+
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+             <!-- MODAL FOR FORM ENDS -->
+
+             
+          <div style="overflow-x:auto;">
+            <table class="table">
+              <tr>
+                <th>&nbsp</th>
+                <th>Sample ID</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>State</th>
+                <th>District</th>
+                <th>Status</th>
+                
+                
+              </tr>
+              <tr>
+                <td><a href="#" class="remove">Remove</a></td>
+                <td>Sample1</td>
+                <td>12.05.2020</td>
+                <td>Raj Yadav</td>
+                <td>25</td>
+                <td>Male</td>
+                <td>Uttarakhand</td>
+                <td>Champawat</td>
+                <td>Delivered</td>
+              
+              </tr>
+              <tr>
+                <td><a href="#" class="remove">Remove</a></td>
+                <td>Sample2</td>
+                <td>15.05.2020</td>
+                <td>Reema Raj</td>
+                <td>30</td>
+                <td>Female</td>
+                <td>Uttarakhand</td>
+                <td>Chamoli</td>
+                <td>Delivered</td>
+                
+              </tr>
+            </table>
+            <!-- TABLE ENDS -->
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 two">
+          <div style="overflow-x:auto;">
+           
+            <hr>
+            <h3>Samples Rejected</h3>
+            <br>
+            <p>These samples have been rejected, collect them again.</p>
+            <!-- TABLE STARTS -->
+            <table class="table">
+              <tr>
+                <th>Sample ID</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>State</th>
+                <th>District</th>
+                <th>Sample test Status</th>
+              </tr>
+              <tr>
+                <td>Sample1</td>
+                <td>20.05.2020</td>
+                <td>Raj Yadav</td>
+                <td>Uttarakhand</td>
+                <td>Champawat</td>
+                <td>Rejected</td>
+              </tr>
+              
+            </table>
+            <!-- TABLE ENDS -->
+          </div>
+        </div>
+      </div>
+       
+
+
+<!-- CONTAINER ENDS -->
+  </div>
+ 
+
+  
+<!-- FOOTER SECTION STARTS-->
+<footer>
+
+<p>&copy; 2020</p>
+
+</footer>
+
+<!-- FOOTER SECTION ENDS-->
+
+
+  <!-- Following scripts are for bootstrap usage on out website -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

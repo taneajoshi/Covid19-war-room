@@ -1,0 +1,281 @@
+:root{
+    /* defining scope through root*/
+  --success:#2ecc71 ;
+    --error:#e74c3c ;
+
+}
+html{
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: initial;
+    font-family:'Open Sans' ,sans-serif ;
+    background-color: #262627;
+  
+    
+
+}
+.container{
+max-width: 700px;
+margin: 100px 30px 0 340px;
+
+}
+
+form h2{
+    text-align: center;
+    font-size:17.9px;
+    letter-spacing: 2.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 40px;
+    
+}
+ form{
+     padding: 22px 50px 40px 60px;
+     background-color: white;
+     border-radius: 50px 0 50px 0;
+ }
+ .form-control{
+      padding-top: 20px;
+     position: relative; 
+    }
+    .form-control label{
+        display: block;
+        padding-bottom: 15px;
+    }
+ form button{
+     cursor: pointer;
+     margin-top: 30px;
+     padding: 8.2px;
+     border-radius: 5px;
+     outline: none;
+     background-color:#3498db;
+     width: 100%;
+     color: white;
+     }
+ .form-control input{
+     padding: 10.85px 75px 10.85px 10.85px;
+     width: 100%;
+     border-radius: 20px;
+     border-color: transparent;
+     outline: 0;
+     border:0.8px solid  black;
+     display: block;
+ }
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{ 
+    border-color: #e74c3c;
+
+}
+.form-control small{
+    color: #e74c3c;
+   visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+
+}
+a.forgotpassword{
+color: rgb(35, 136, 219);
+font-size: 12.8px;
+
+}
+.forgot{
+    margin: 20px 0 10px 230px;
+}
+.forgoth2{
+    margin-top: 40px;
+    font-weight: 300;
+    text-align: left;
+}
+p.request-email{
+font-size: 18px;
+margin-top: 35px;
+
+}
+p.send-again{
+    font-size: 12.89px;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+#cancel{
+    margin-top: 6px;
+}
+.less input{
+    margin-top: 0px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid black;
+}
+button:hover{
+    transform: scale(1.02);
+}
+
+
+@media(max-width:1090px){
+
+
+.container{
+    width: 500px;
+    margin: 40px 30px 0 270px;
+  
+    }
+    .form-control{
+        margin-top: 15px;
+        position: relative; 
+       }
+       .form-control label{
+           display: block;
+           padding-bottom: 10px;
+       }
+       .forgot{
+        margin: 20px 0 10px 175px;
+       }
+
+       form{
+        padding: 15px 30px 15px 40px;
+       }
+      .form-control input{
+          width: 100%;
+      }
+      h2{
+          margin-left: 10px;
+      }
+
+}
+
+@media(max-width:940px){
+   
+    .container{
+    
+        width: 500px;
+        margin: 40px 30px 0 220px;
+
+        }
+        .form-control{
+            margin-top: 5px;
+           }
+           .forgot{
+            margin: 20px 0 10px 88px;
+           }
+     
+    }
+    @media(max-width:770px){
+   
+        .container{
+        
+            width: 500px;
+            margin: 40px 30px 0 140px;
+    
+            }
+            form{
+                margin-top: 10px;
+               }
+               .forgot{
+                margin: 20px 0 10px 160px;
+               }
+         
+        }
+
+
+    @media(max-width:510px){
+        body{
+            background-color: white;
+        }
+        
+        .container{
+            width: 365px;
+            margin: 40px 20px 0 40px;
+    
+            }
+            form{
+                margin-left: 40px;
+            }
+            
+            
+        }
+        /* PIXEL SCREENS */
+        @media(max-width:417px){
+       body{
+           background-color: white;
+        
+       }
+        
+            .container{
+                width: 355px;
+                margin: 20px 20px 0 0px;
+        
+                }
+               
+                .forgot{
+                    margin-left: 78px;
+                }
+                
+                form{
+                    margin-left: 18px;
+                }
+                form h2{
+                    margin-left: 40px;
+                    margin-bottom: 25px;
+                }
+                .forgoth2{
+                    margin-top: 20px;
+                    font-size: 15px;
+                    text-align: left;
+                }
+                p.request-email{
+                    font-size: 16.5px;
+                }
+                .less input{
+                    padding: 8.4px;
+                }
+                p.send-again{
+                    margin-left: 0px;
+                   
+                }
+            }
+
+             /* SMARTPHONE COMMON SCREEN */
+        @media(max-width:376px){
+           
+            .container{
+                width: 360px;
+               
+        
+                }
+                
+                form{
+                    margin-left: 2px;
+                    margin-right: 15px;
+                }
+
+                
+                
+            }
+            @media(max-width:325px){
+               
+                
+                .container{
+                    width: 310px;
+                    margin: 40px 20px 0 0px;
+            
+                    }
+                    
+                    form{
+                        margin-left: 1px;
+                    }
+                    
+                    .forgot{
+                        margin-left: 60px;
+                    }
+                }
