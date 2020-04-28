@@ -41,11 +41,12 @@ a{
 }
 a:hover{
      text-decoration: none;
-    color: white;
-     
+    color: white;   
 }
+
 .bulk{
     width:80%;
+    
 }
 a.white{
     padding-left:28px;
@@ -139,6 +140,12 @@ a.link.line:hover:after{
     display: inline;
 }
 /* NAV TRANSITION CSS ENDS */
+.btn-new{
+    font-size: 14px;
+    color: white;
+    background-color: #0095FF;
+    
+}
 
 .logout{
     padding: 5px 10px;
@@ -206,21 +213,20 @@ a.remove{
     text-decoration: underline;
    
 }
-
-
+a.editbtn{
+    color: rgb(230, 26, 26);
+    text-decoration: underline;
+   
+}
+div.dataTables_filter input{margin-left:0.5em;display:inline-block;width:500px;}
 /* for table */
 tr, th, td{
-    padding: 14px;
-  
+    padding: 20px;
 }
   tr{
      font-size: 15px;
-    
      border: 1px solid #0000003d;
-     
-      
-     
-     
+   
   }
   
   th{
@@ -300,6 +306,10 @@ tr, th, td{
 }
 /* Pixel Phones */
 @media(max-width:455px){
+    .bulk{
+        width: 100%;
+    }
+
     .logo{
         margin-left: 0;
     }
