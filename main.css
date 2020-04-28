@@ -45,8 +45,13 @@ a:hover{
 }
 
 .bulk{
-    width:80%;
+    width:100%;
     
+    
+}
+.modal-controller{
+    margin-top: 135px;
+
 }
 a.white{
     padding-left:28px;
@@ -308,6 +313,12 @@ tr, th, td{
 @media(max-width:455px){
     .bulk{
         width: 100%;
+        margin-top: 35px;
+       
+    }
+    .modal-controller{
+        margin-top: 12px;
+    
     }
 
     .logo{
